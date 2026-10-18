@@ -1,0 +1,55 @@
+{
+  "held_out_families": [
+    "efficientnet",
+    "mobilenet",
+    "shufflenet",
+    "mnasnet",
+    "googlenet",
+    "inception"
+  ],
+  "sequence_length": 7,
+  "training_ratio": 0.9,
+  "mlp_epochs": 400,
+  "rnn_epochs": 400,
+  "mlp_learning_rate": 0.001,
+  "rnn_learning_rate": 0.01,
+  "rnn_weight_decay": 1e-05,
+  "rnn_batch_size": 512,
+  "datasets": {
+    "2080Ti": {
+      "file": "2080Ti/all_logs.json",
+      "sha256": "1ee4c508229c102af138d4974dafe40d2b7eb83e278451b4d2fc8aa9d3bdfd41"
+    },
+    "3080Ti": {
+      "file": "3080Ti/all_logs.json",
+      "sha256": "5635a1dc908a91562f528e43ca8caafd5761b1c21eecbd24b817a1aa22d60714"
+    },
+    "Jetson_Orin_AGX": {
+      "file": "Jetson_Orin_AGX/all_logs.json",
+      "sha256": "2aaee3e847c4b981fdfb03bb1e1f09a8d5922881e8b8b14fb39ced9c0b58dce5"
+    },
+    "4060Ti": {
+      "file": "4060Ti/all_logs.json",
+      "sha256": "9c0703f3c1870f674b253074e96c0143ed8dd6ea3b1630d35513abb89cd2578c"
+    },
+    "A4000": {
+      "file": "A4000/all_logs.json",
+      "sha256": "b268f34ba4f0a71f9ae82977aed96fa1e2cf085bef03888db92e413198714121"
+    },
+    "A6000": {
+      "file": "A6000/all_logs.json",
+      "sha256": "e3cbc9bf7eba7c19f8966da1ae7138ae0d2f0c9f2e1bab5eb8da29ca43dec755"
+    },
+    "Jetson_Orin_Nano": {
+      "file": "Jetson_Orin_Nano/all_logs.json",
+      "sha256": "9d6ae5defde17738466efc6f2f08b08c340320682e48452ff1ed4039224fa16c"
+    },
+    "Jetson_Xavier_NX": {
+      "file": "Jetson_Xavier_NX/all_logs.json",
+      "sha256": "381cb6fe4acc4ee8c61a12ef38f5d7e05287fa33c3820b17dff6644a042bd196"
+    }
+  },
+  "lr_alpha": 1.0,
+  "mlp2_epochs": 400,
+  "transformer_epochs": 400
+}

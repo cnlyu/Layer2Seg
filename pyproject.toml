@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layer2seg"
+version = "0.1.0"
+description = "Layer2Seg, LR, MLP, MLP2, and Transformer training and inference on GPU profiling datasets"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23,<2", "torch>=2.0"]
+
+[project.optional-dependencies]
+profiling = ["torch>=2.1", "torchvision>=0.16", "nvidia-ml-py>=11"]
+jetson = ["torchvision>=0.15", "jetson-stats>=4"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "DATA_LICENSE"]
+
+[tool.setuptools.packages.find]
+include = ["layer2seg*"]

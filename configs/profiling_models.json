@@ -1,0 +1,4 @@
+{
+  "resnet18": {"source": "torchvision", "input_size": [224]},
+  "mobilenet_v2": {"source": "torchvision", "input_size": [224]}
+}
